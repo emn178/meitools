@@ -20,7 +20,50 @@
     <script>
       document.documentElement.classList.toggle('dark-theme', localStorage.getItem('meitools.theme') === 'dark');
     </script>
-    <script type="module" crossorigin src="/meitools/assets/index-BXFJQKU-.js"></script>
+    <script>
+      (function () {
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-PVZ39TG8NT');
+
+        var loaded = false;
+        var events = ['scroll', 'mousemove', 'touchstart'];
+
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+
+          for (var i = 0; i < events.length; i += 1) {
+            document.removeEventListener(events[i], loadGtag);
+          }
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PVZ39TG8NT';
+          document.head.appendChild(script);
+        }
+
+        for (var i = 0; i < events.length; i += 1) {
+          document.addEventListener(events[i], loadGtag);
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loadGtag, 3500);
+          });
+        } else {
+          setTimeout(loadGtag, 3500);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/meitools/assets/index-MerN0F4B.js"></script>
     <link rel="stylesheet" crossorigin href="/meitools/assets/index-BBH-7fTS.css">
   </head>
   <body>
