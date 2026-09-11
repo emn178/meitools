@@ -1,4 +1,5 @@
 # Generated from src/lib/routes.ts — do not hand-edit in dist.
 /video/trim  /video/trim/index.html  200
+/video/remove  /video/remove/index.html  200
 /video/crop  /video/crop/index.html  200
 /*    /index.html  200
