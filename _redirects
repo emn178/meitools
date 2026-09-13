@@ -4,4 +4,5 @@
 /video/crop  /video/crop/index.html  200
 /video/rotate  /video/rotate/index.html  200
 /video/flip  /video/flip/index.html  200
+/video/resize  /video/resize/index.html  200
 /*    /index.html  200

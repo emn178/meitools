@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!--seo-head-->
+    <title>Resize video in your browser — MeiTools</title>
+    <meta name="description" content="Resize a video to exact dimensions, preserve or fill the frame, and export it entirely on your device. Nothing is uploaded." />
+    <link rel="canonical" href="https://meitools.emn178.com/video/resize/" />
+    <meta property="og:title" content="Resize video in your browser — MeiTools" />
+    <meta property="og:description" content="Resize a video to exact dimensions, preserve or fill the frame, and export it entirely on your device. Nothing is uploaded." />
+    <meta property="og:url" content="https://meitools.emn178.com/video/resize/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://meitools.emn178.com/logo.png" />
+    <meta property="og:image:alt" content="MeiTools" />
+    <!--/seo-head-->
+    <script>
+      try {
+        document.documentElement.classList.toggle(
+          'dark-theme',
+          localStorage.getItem('meitools.theme') !== 'light',
+        );
+      } catch (e) {
+        document.documentElement.classList.add('dark-theme');
+      }
+    </script>
+    <script>
+      (function () {
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-PVZ39TG8NT');
+
+        var loaded = false;
+        var events = ['scroll', 'mousemove', 'touchstart'];
+
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+
+          for (var i = 0; i < events.length; i += 1) {
+            document.removeEventListener(events[i], loadGtag);
+          }
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PVZ39TG8NT';
+          document.head.appendChild(script);
+        }
+
+        for (var i = 0; i < events.length; i += 1) {
+          document.addEventListener(events[i], loadGtag);
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loadGtag, 3500);
+          });
+        } else {
+          setTimeout(loadGtag, 3500);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DBZbTlZV.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-33NvnGpE.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--prerender-body-->
+    <div class="seo-prerender-only" data-route="resize" hidden>
+<h1>Resize Video</h1>
+<div class="tool-description-body"><h2>Overview</h2><p>Resize Video changes the output width and height of an entire video. Choose a common landscape or portrait preset, or enter exact dimensions, then preview how the picture will fit the new frame before exporting.</p><h2>How to resize a video</h2><p>Follow these steps in your browser — nothing is uploaded to a server.</p><ul><li>Import one video file from your device.</li><li>Choose a size preset or enter an exact width and height. Lock aspect ratio if you want the other dimension to update automatically.</li><li>Choose Fit, Fill, or Stretch and check the result in the preview.</li><li>Export the resized video and save it locally.</li></ul><h2>Choose how the content fits</h2><p>Fit keeps the complete picture and adds centered black bars when its aspect ratio differs from the output frame. Fill keeps the picture proportional and center-crops the parts that extend beyond the frame. Stretch uses the full output frame without cropping, but can distort the picture. This setting is independent of Lock aspect ratio, which only links the width and height fields while you edit them.</p><h2>Output size and quality</h2><p>Resizing changes every frame, so the video must be re-encoded. MeiTools uses high-quality scaling, keeps the source container and video codec when compatible, and preserves audio automatically. Enlarging a video creates more pixels but cannot restore detail that is not present in the source.</p><h2>Local processing</h2><p>All decoding, resizing, and encoding runs on your device. Your video is not uploaded, and the editing session is not restored after you leave or reload the page. Large, long, or high-resolution files may use significant memory, so a desktop browser is recommended for demanding exports.</p><h2>FAQ</h2><ul><li>Which formats are supported? Common MP4, WebM, and MOV files usually work. If the source format cannot be reused, MeiTools chooses a compatible output automatically.</li><li>Will resizing reduce quality? Resizing requires re-encoding, which can introduce a small quality change. MeiTools uses high-quality scaling and encoding settings to minimize visible loss.</li><li>Will audio be preserved? Yes. Audio is copied when compatible and re-encoded only when the output container requires it.</li><li>Does Lock aspect ratio prevent cropping or distortion? No. It only links the dimension fields. Use Fit, Fill, or Stretch to control how the picture is placed in the output frame.</li><li>Can I make a landscape video vertical? Yes. Choose a portrait size, then use Fit to keep the whole picture or Fill to crop it to the vertical frame.</li></ul><h2>Related tools</h2><p>Need to remove the outer edges, turn the picture, or mirror it instead? Try another local video tool.</p><p class="related-tools-links"><a href="/video/crop/">Crop Video</a> · <a href="/video/rotate/">Rotate Video</a> · <a href="/video/flip/">Flip Video</a></p></div>
+</div>
+    <!--/prerender-body-->
+  </body>
+</html>
