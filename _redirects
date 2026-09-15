@@ -1,6 +1,7 @@
 # Generated from src/lib/routes.ts — do not hand-edit in dist.
 /video/trim  /video/trim/index.html  200
 /video/remove  /video/remove/index.html  200
+/video/merge  /video/merge/index.html  200
 /video/crop  /video/crop/index.html  200
 /video/rotate  /video/rotate/index.html  200
 /video/flip  /video/flip/index.html  200
