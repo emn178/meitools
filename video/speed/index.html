@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!--seo-head-->
+    <title>Change video speed in your browser — MeiTools</title>
+    <meta name="description" content="Slow down or speed up a video on your device while preserving audio pitch. Nothing is uploaded." />
+    <link rel="canonical" href="https://meitools.emn178.com/video/speed/" />
+    <meta property="og:title" content="Change video speed in your browser — MeiTools" />
+    <meta property="og:description" content="Slow down or speed up a video on your device while preserving audio pitch. Nothing is uploaded." />
+    <meta property="og:url" content="https://meitools.emn178.com/video/speed/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://meitools.emn178.com/logo.png" />
+    <meta property="og:image:alt" content="MeiTools" />
+    <!--/seo-head-->
+    <script>
+      try {
+        document.documentElement.classList.toggle(
+          'dark-theme',
+          localStorage.getItem('meitools.theme') !== 'light',
+        );
+      } catch (e) {
+        document.documentElement.classList.add('dark-theme');
+      }
+    </script>
+    <script>
+      (function () {
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-PVZ39TG8NT');
+
+        var loaded = false;
+        var events = ['scroll', 'mousemove', 'touchstart'];
+
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+
+          for (var i = 0; i < events.length; i += 1) {
+            document.removeEventListener(events[i], loadGtag);
+          }
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PVZ39TG8NT';
+          document.head.appendChild(script);
+        }
+
+        for (var i = 0; i < events.length; i += 1) {
+          document.addEventListener(events[i], loadGtag);
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loadGtag, 3500);
+          });
+        } else {
+          setTimeout(loadGtag, 3500);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-BwYDtxpR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dt8LmVVQ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--prerender-body-->
+    <div class="seo-prerender-only" data-route="speed" hidden>
+<h1>Change Video Speed</h1>
+<div class="tool-description-body"><h2>Overview</h2><p>Change Video Speed slows down or speeds up an entire video from 0.25× to 16×. Preview the new pace, compare the source and output durations, and export with synchronized audio that keeps its natural pitch.</p><h2>How to change video speed</h2><p>Follow these steps in your browser — nothing is uploaded to a server.</p><ul><li>Import one video file from your device.</li><li>Choose a common speed preset, move the slider, or enter an exact speed.</li><li>Play or seek through the preview and check the estimated output duration.</li><li>Export the adjusted video and save it locally.</li></ul><h2>Audio pitch and output quality</h2><p>Changing speed alters the timing of every video frame and audio sample, so both tracks must be re-encoded. MeiTools keeps speech and music at their natural pitch while changing their tempo, keeps video and audio synchronized, and chooses compatible high-quality video and audio settings automatically.</p><h2>Local processing</h2><p>All decoding, timing changes, and encoding run on your device. Your video is not uploaded, and the editing session is not restored after you leave or reload the page. Slower speeds create longer output and may require significantly more processing time, memory, and storage.</p><h2>FAQ</h2><ul><li>What speed range is supported? Choose any value from 0.25× to 16× in 0.05 steps. Common presets are available through 4×.</li><li>Will voices sound higher or lower? No. MeiTools changes audio tempo while preserving its pitch.</li><li>Can I change only part of a video? No. The selected speed applies to the complete video.</li><li>Will audio stay synchronized? Yes. Video and audio timing are changed together and encoded into one synchronized output.</li><li>Which formats are supported? Common MP4, WebM, and MOV files usually work. If the source format cannot be reused, MeiTools chooses a compatible output automatically.</li></ul><h2>Related tools</h2><p>Need to shorten the video or change its output dimensions instead? Try another local video tool.</p><p class="related-tools-links"><a href="/video/trim/">Trim Video</a> · <a href="/video/resize/">Resize Video</a></p></div>
+</div>
+    <!--/prerender-body-->
+  </body>
+</html>
