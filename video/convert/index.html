@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!--seo-head-->
+    <title>Convert video format in your browser — MeiTools</title>
+    <meta name="description" content="Convert a video to MP4, MOV, WebM, MKV, or AVI and choose H.264, VP8, VP9, or MPEG-4 on your device. Nothing is uploaded." />
+    <link rel="canonical" href="https://meitools.emn178.com/video/convert/" />
+    <meta property="og:title" content="Convert video format in your browser — MeiTools" />
+    <meta property="og:description" content="Convert a video to MP4, MOV, WebM, MKV, or AVI and choose H.264, VP8, VP9, or MPEG-4 on your device. Nothing is uploaded." />
+    <meta property="og:url" content="https://meitools.emn178.com/video/convert/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://meitools.emn178.com/logo.png" />
+    <meta property="og:image:alt" content="MeiTools" />
+    <!--/seo-head-->
+    <script>
+      try {
+        document.documentElement.classList.toggle(
+          'dark-theme',
+          localStorage.getItem('meitools.theme') !== 'light',
+        );
+      } catch (e) {
+        document.documentElement.classList.add('dark-theme');
+      }
+    </script>
+    <script>
+      (function () {
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-PVZ39TG8NT');
+
+        var loaded = false;
+        var events = ['scroll', 'mousemove', 'touchstart'];
+
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+
+          for (var i = 0; i < events.length; i += 1) {
+            document.removeEventListener(events[i], loadGtag);
+          }
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PVZ39TG8NT';
+          document.head.appendChild(script);
+        }
+
+        for (var i = 0; i < events.length; i += 1) {
+          document.addEventListener(events[i], loadGtag);
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loadGtag, 3500);
+          });
+        } else {
+          setTimeout(loadGtag, 3500);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-CYZNae_z.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dt6JcKEM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--prerender-body-->
+    <div class="seo-prerender-only" data-route="convert" hidden>
+<h1>Convert Video</h1>
+<div class="tool-description-body"><h2>Overview</h2><p>Convert Video changes a file’s container and, optionally, its video codec entirely in your browser. Choose MP4, MOV, WebM, MKV, or AVI, then pick Auto or a compatible codec such as H.264, VP8, VP9, or MPEG-4.</p><h2>How to convert a video</h2><p>Follow these steps — nothing is uploaded to a server.</p><ul><li>Import one video from your device.</li><li>Choose the output container.</li><li>Choose Auto or a listed video codec.</li><li>Export and save the converted file locally.</li></ul><h2>Containers and codecs</h2><p>Convert is the only MeiTools tool that exposes output container and video codec. Auto remuxes when the source video codec is recommended for the target container; otherwise it encodes to a safe default. Matching an explicit codec that is already present copies that stream instead of re-encoding it. Audio is handled automatically: compatible tracks are copied, and incompatible tracks fall back to AAC, Opus, or MP3 by container. Silent videos stay silent.</p><h2>Local processing</h2><p>All demuxing, remuxing, and encoding run on your device. Files are never uploaded, and the session is not restored after you leave or reload the page. Large files may need significant memory and time — watch the risk notice before exporting.</p><h2>FAQ</h2><ul><li>Which containers are supported? MP4, MOV, WebM, MKV, and AVI.</li><li>Can I encode HEVC or AV1? No. When the source is HEVC, you can remux with HEVC (copy) into MP4, MOV, or MKV. Otherwise Auto encodes H.264 for those containers.</li><li>Does Convert change quality settings? No. Quality, bitrate, preset, resolution, and FPS stay automatic.</li><li>Why is Export disabled? Same-container remuxes that would not change the file are blocked. Wait for codec probing when converting within the same container with Auto.</li></ul><h2>Related tools</h2><p>Need to crop the frame or change playback speed instead?</p><p class="related-tools-links"><a href="/video/crop/">Crop Video</a> · <a href="/video/speed/">Change Video Speed</a></p></div>
+</div>
+    <!--/prerender-body-->
+  </body>
+</html>
