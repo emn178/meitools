@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <!--seo-head-->
-    <title>Merge videos in your browser — MeiTools</title>
-    <meta name="description" content="Combine multiple videos into one MP4, entirely in your browser. Files stay on your device." />
-    <link rel="canonical" href="https://meitools.emn178.com/video/merge/" />
-    <meta property="og:title" content="Merge videos in your browser — MeiTools" />
-    <meta property="og:description" content="Combine multiple videos into one MP4, entirely in your browser. Files stay on your device." />
-    <meta property="og:url" content="https://meitools.emn178.com/video/merge/" />
+    <title>Extract audio from video in your browser — MeiTools</title>
+    <meta name="description" content="Extract audio from a video as MP3, M4A, WAV, FLAC, OGG, or Opus privately on your device. Nothing is uploaded." />
+    <link rel="canonical" href="https://meitools.emn178.com/video/extract-audio/" />
+    <meta property="og:title" content="Extract audio from video in your browser — MeiTools" />
+    <meta property="og:description" content="Extract audio from a video as MP3, M4A, WAV, FLAC, OGG, or Opus privately on your device. Nothing is uploaded." />
+    <meta property="og:url" content="https://meitools.emn178.com/video/extract-audio/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://meitools.emn178.com/logo.png" />
     <meta property="og:image:alt" content="MeiTools" />
@@ -80,9 +80,9 @@
   <body>
     <div id="root"></div>
     <!--prerender-body-->
-    <div class="seo-prerender-only" data-route="merge" hidden>
-<h1>Merge Video</h1>
-<div class="tool-description-body"><h2>Overview</h2><p>Merge Video combines multiple clips into one MP4. Arrange the clips in the order you want, choose the output canvas size, and preview the selected clip before exporting.</p><h2>How to merge videos</h2><p>Follow these steps in your browser — nothing is uploaded to a server.</p><ul><li>Import two or more video files from your device.</li><li>Drag the clips to arrange them in the order you want them to play.</li><li>Choose the output canvas size, then check the preview.</li><li>Export the merged video and save it locally.</li></ul><h2>Canvas and source formats</h2><p>Clips are normalized to a shared canvas before they are joined. Videos with a different aspect ratio are letterboxed so the full picture remains visible. The export uses MP4 with H.264 video and AAC audio when available, and output dimensions are adjusted to valid even values when needed.</p><h2>Local processing</h2><p>All decoding, normalization, and encoding runs on your device. Files are not sent to a cloud service. Merging multiple or high-resolution videos may use significant memory, so a desktop browser is recommended for demanding exports.</p><h2>FAQ</h2><ul><li>How many videos can I merge? Import at least two clips. The practical limit depends on your device memory and the total duration and resolution.</li><li>Can I change the clip order? Yes. Drag clips in the list to reorder them before exporting.</li><li>Will different aspect ratios work? Yes. Clips are fitted to the shared canvas with letterboxing rather than being cropped.</li><li>Which formats are supported? Common MP4, WebM, and MOV files usually work. Unsupported codecs show an error at import or export.</li></ul><h2>Related tools</h2><p>Prepare a clip before combining it, or remove an unwanted section from one of the clips.</p><p class="related-tools-links"><a href="/video/trim/">Trim Video</a> · <a href="/video/remove/">Remove Video Section</a></p></div>
+    <div class="seo-prerender-only" data-route="extract-audio" hidden>
+<h1>Extract Audio</h1>
+<div class="tool-description-body"><h2>Overview</h2><p>Extract Audio saves the first audio track from a video entirely in your browser. Auto preserves the original audio without re-encoding when possible, or you can choose MP3, M4A, WAV, FLAC, OGG, or Opus.</p><h2>How to extract audio</h2><p>Import one video, wait for its audio track to be analyzed, choose Auto or an audio format, then export the audio file to your device.</p><h2>Auto and output formats</h2><p>Auto copies AAC, MP3, Opus, Vorbis, FLAC, and supported PCM audio into a conventional standalone audio file. Unknown or incompatible audio falls back to high-quality AAC in M4A. Choosing a format converts only when the source codec cannot be copied safely. Bitrate, sample rate, and channels remain automatic.</p><h2>Local processing</h2><p>Audio analysis, extraction, and conversion happen on your device. The video and extracted audio are never uploaded, and the session is not restored after you leave or reload the page.</p><h2>FAQ</h2><ul><li>Does Auto reduce quality? Not when the source audio can be copied safely; in that case no audio samples are re-encoded.</li><li>What happens if the video has no audio? Export remains disabled and the editor reports that no audio track was found.</li><li>Can I choose a different audio track? No. This tool extracts the first usable audio track.</li><li>Can I trim or adjust volume here? No. Use Trim or Adjust Video Volume before extracting when needed.</li></ul><h2>Related tools</h2><p>Need to change the video format or volume instead?</p><p class="related-tools-links"><a href="/video/convert/">Convert Video</a> · <a href="/video/volume/">Adjust Video Volume</a></p></div>
 </div>
     <!--/prerender-body-->
   </body>
