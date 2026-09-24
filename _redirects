@@ -10,5 +10,6 @@
 /video/volume  /video/volume/index.html  200
 /video/extract-audio  /video/extract-audio/index.html  200
 /video/convert  /video/convert/index.html  200
+/video/compress  /video/compress/index.html  200
 /video/gif  /video/gif/index.html  200
 /*    /index.html  200
