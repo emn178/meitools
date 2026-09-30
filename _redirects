@@ -15,4 +15,9 @@
 /video/convert  /video/convert/index.html  200
 /video/compress  /video/compress/index.html  200
 /video/gif  /video/gif/index.html  200
+/audio/trim  /audio/trim/index.html  200
+/audio/remove  /audio/remove/index.html  200
+/audio/merge  /audio/merge/index.html  200
+/audio/volume  /audio/volume/index.html  200
+/audio/convert  /audio/convert/index.html  200
 /*    /index.html  200

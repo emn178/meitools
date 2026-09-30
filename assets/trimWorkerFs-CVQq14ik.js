@@ -1,0 +1,1 @@
+import{n as e}from"./preload-helper-RSa7bHFM.js";function t(t){let n=e(t);return/^\.[a-z0-9]{1,16}$/i.test(n)?n:`.mp4`}function n(e){return`source${t(e)}`}export{n as t};

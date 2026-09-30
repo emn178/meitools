@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!--seo-head-->
+    <title>Trim audio in your browser — MeiTools</title>
+    <meta name="description" content="Cut a precise clip from an MP3, other audio file, or the sound of a video on your device. Nothing is uploaded." />
+    <link rel="canonical" href="https://meitools.emn178.com/audio/trim/" />
+    <meta property="og:title" content="Trim audio in your browser — MeiTools" />
+    <meta property="og:description" content="Cut a precise clip from an MP3, other audio file, or the sound of a video on your device. Nothing is uploaded." />
+    <meta property="og:url" content="https://meitools.emn178.com/audio/trim/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://meitools.emn178.com/logo.png" />
+    <meta property="og:image:alt" content="MeiTools" />
+    <!--/seo-head-->
+    <script>
+      try {
+        document.documentElement.classList.toggle(
+          'dark-theme',
+          localStorage.getItem('meitools.theme') !== 'light',
+        );
+      } catch (e) {
+        document.documentElement.classList.add('dark-theme');
+      }
+    </script>
+    <script>
+      (function () {
+        if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-PVZ39TG8NT');
+
+        var loaded = false;
+        var events = ['scroll', 'mousemove', 'touchstart'];
+
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+
+          for (var i = 0; i < events.length; i += 1) {
+            document.removeEventListener(events[i], loadGtag);
+          }
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PVZ39TG8NT';
+          document.head.appendChild(script);
+        }
+
+        for (var i = 0; i < events.length; i += 1) {
+          document.addEventListener(events[i], loadGtag);
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(loadGtag, 3500);
+          });
+        } else {
+          setTimeout(loadGtag, 3500);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-Co3bBsVN.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-RSa7bHFM.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DaNeQ5nu.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--prerender-body-->
+    <div class="seo-prerender-only" data-route="audio-trim" hidden>
+<h1>Trim Audio</h1>
+<div class="tool-description-body"><h2>Overview</h2><p>Trim Audio cuts one continuous clip from an audio file, or from the sound of a video, entirely in your browser. The result keeps the original audio format, and your file is never uploaded.</p><h2>How to trim audio</h2><p>Follow these steps on your device.</p><ul><li>Import one MP3, M4A, WAV, FLAC, OGG, Opus, or other audio file, or a video with sound.</li><li>Drag the start and end handles, or type exact times, to select the part to keep.</li><li>Preview the selection.</li><li>Export and save the trimmed file.</li></ul><h2>Format and quality</h2><p>MP3, AAC/M4A, and Vorbis audio are copied without re-encoding, so quality is unchanged and the cut lands on the nearest audio frame, a few hundredths of a second from the exact time. WAV and FLAC are cut to the exact sample and stay lossless. Opus audio is re-encoded as Opus at a similar bitrate for a clean cut. Exporting the whole of an audio file copies it unchanged; from a video, the whole soundtrack is copied when its format allows and converted otherwise. Tags such as title and artist are kept, and so is JPEG or PNG cover art in MP3, M4A, and FLAC files. The format is recognized from the file itself, so a file with a wrong or missing extension is saved with the right one. From a video, only the audio is saved, as a standalone audio file that matches its audio: AAC, AC-3, and E-AC-3 become M4A, MP3 stays MP3, Opus becomes Opus, Vorbis becomes OGG, FLAC stays FLAC, PCM becomes WAV, and other formats such as DTS are converted to AAC in M4A.</p><h2>Local processing</h2><p>Trimming runs on your device, so the file is not uploaded. The session is not restored after you leave or reload the page.</p><h2>FAQ</h2><ul><li>Can I change the format or bitrate? No. Trim keeps the source format and chooses encoding automatically.</li><li>Can I remove a part from the middle? Trim keeps one continuous selection; use Remove Audio Section to cut a part out and join the rest.</li><li>Can I trim the audio of a video? Yes. Import the video and export the part you need as an audio file; the picture is not included. Use Trim Video to keep the video.</li></ul><h2>Related tools</h2><p>Need to cut out a middle part, a different format, a video’s whole soundtrack, or a shorter video?</p><p class="related-tools-links"><a href="/audio/remove/">Remove Audio Section</a> · <a href="/audio/convert/">Convert Audio</a> · <a href="/video/extract-audio/">Extract Audio</a> · <a href="/video/trim/">Trim Video</a></p></div>
+</div>
+    <!--/prerender-body-->
+  </body>
+</html>
